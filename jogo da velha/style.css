@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(94, 94, 94);
+    font-size: 7.0rem;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#telaInicial {
+    padding-top: 4%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    transition: 2s;
+}
+
+#telaInicial h1 {
+    font-size: 8.0rem;
+    text-align: center;
+    margin-top: 4%;
+    color: rgb(255, 255, 255);
+}
+
+#telaInicial button {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#telaInicial p {
+    font-size: 2.6rem;
+    height: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 3%;
+    align-items: center;
+}
+
+#telaInicial label {
+    height: 20%;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    cursor: text;
+    transition: all 0.5s;
+}
+
+#telaInicial input {
+    position: relative;
+    outline: 0; 
+    cursor: text;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px white solid;
+    width: 80%;
+    margin-top: -10%;
+    transition: all 0.5s;
+    color: white;
+}
+
+#telaInicial input:focus , #telaInicial input:valid {
+    border-color: cornflowerblue;
+}
+
+#telaInicial input:focus~label , #telaInicial input:valid~label {
+    color: cornflowerblue;
+    font-size: 1.0rem;
+    transform: translateY(-11px);
+}
+
+.linha {
+    width: 28%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.casa {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#linha1 , #linha2 {
+    border-bottom: 2px white solid;
+} 
+
+#casa01 , #casa04 , #casa07, #casa02 , #casa05 , #casa08 {
+    border-right:2px white solid;
+}
+
+#placar {
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    width: 20%;
+    height: 20%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    color: black;
+}
+
+.x {
+    width: 48%;
+    background-color: rgb(189, 189, 189);   
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+.o {
+    width: 48%;
+    background-color: rgb(189, 189, 189);   
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5%;
+    font-size: 2.0rem;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.resetPagina button{
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 2%;
+    top: 90%;
+    cursor: pointer;
+    padding: 0.4%;
+    border: 1px solid white;
+}
+
+button {
+    cursor: pointer;
+}

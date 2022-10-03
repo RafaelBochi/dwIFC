@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgb(182, 182, 182) 100%);
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(85, 85, 85, 1) 100%);
+    padding: 2%;
+    border-radius: 10% 0% 10% 0% / 10% 10% 10% 10%;
+    gap: 2%;
+}
+
+.visor {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(221, 221, 221);
+    font-size: 3.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.btn-c{
+    position: relative;
+    width: 10%;
+    height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1%;
+    padding-right: 2%;
+    border-right: 1px solid black;
+}
+
+.btn {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(137, 137, 137);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.section-numeros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    padding-left: 5%;
+}
+
+.section-numeros>div {
+    font-size: 2.6rem;
+    width: 25%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    clip-path: circle(40% at 50% 50%);
+    transition: ease-in 0.4s;
+}
+
+.section-numeros>div:hover {
+    background-color: rgba(0, 0, 0, 0.241);
+}

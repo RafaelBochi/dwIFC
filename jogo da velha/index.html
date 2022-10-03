@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="telaInicial">
+        <h1>Jogo da Velha</h1>
+        <form>
+            <input id="rodadas" type="text" required autocomplete="off">
+            <label for="rodadas">  Quantas rodadas vc quer?<br>
+            </label> 
+        </form>
+        <p>Quem vai começar?</p>
+        <div>
+            <button id="btn-x" onclick="cmcX()">
+            X
+        </button>
+        <button id="btn-o" onclick="cmcO()">
+            O
+        </button>
+        </div>
+
+        
+    </section>
+    <main>
+        <div id="linha1" class="linha">
+            <div id="casa01" class="casa" onclick="jogada(this)"></div>
+            <div id="casa02" class="casa" onclick="jogada(this)"></div>
+            <div id="casa03" class="casa" onclick="jogada(this)"></div>
+        </div>
+        <div id="linha2" class="linha">
+            <div id="casa04" class="casa" onclick="jogada(this)"></div>
+            <div id="casa05" class="casa" onclick="jogada(this)"></div>
+            <div id="casa06" class="casa" onclick="jogada(this)"></div>
+        </div>
+        <div id="linha3" class="linha">
+            <div id="casa07" class="casa" onclick="jogada(this)"></div>
+            <div id="casa08" class="casa" onclick="jogada(this)"></div>
+            <div id="casa09" class="casa" onclick="jogada(this)"></div>
+        </div>
+
+        <span><button onclick="reset()">RESETAR CASAS</button></span>
+
+        <section id="placar">
+            <div class="x">
+                <h2>X</h2>
+                <p id="placarX"></p>
+            </div>
+            <div class="o">
+                <h2>O</h2>
+                <p id="placarY"></p>
+            </div>
+        </section>
+        <span class="resetPagina">
+            <button onclick="recarregarAPagina()">
+                RESESTAR JOGO
+            </button>
+        </span>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
