@@ -3,20 +3,32 @@ let visor = document.getElementById('visor');
 let btnC = document.querySelector('.btn-c');
 let operador = document.querySelectorAll('.operador');
 let bntIgual = document.querySelector('#btn-igual');
+let btnPonto = document.querySelector('#btn-ponto');
 
 for (let btn of btnNumeros) {
     btn.addEventListener('click', cliqueNumero);
 }
 
 function cliqueNumero(event) {
-    if (isNaN(visor.innerHTML)) {
-        visor.innerHTML = event.target.innerHTML;
-    }
-    else {
+        if (isNaN(visor.innerHTML)) {
+            visor.innerHTML = event.target.innerHTML;
+        }
+        else {
+            visor.innerHTML = visor.innerHTML + event.target.innerHTML;
+        }
+
+}
+
+btnPonto.addEventListener('click', cliquePonto);
+
+function cliquePonto(event) {
+let valorVisor = Number(visor.innerHTML);
+    if (!isNaN(visor.innerHTML+'.')) {
         visor.innerHTML = visor.innerHTML + event.target.innerHTML;
     }
-    
 }
+
+
 
 function reset(){
     visor.innerHTML = "";
@@ -29,10 +41,12 @@ for (let i of operador) {
 let valorSalvo;
 let operacaoSalva;
 
+
 function cliqueOperador(event) {
 
     if (!isNaN(visor.innerHTML)) {
         if (valorSalvo === undefined) {
+            
             valorSalvo = Number(visor.innerHTML);
         }
         else {
