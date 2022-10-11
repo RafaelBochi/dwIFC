@@ -63,7 +63,6 @@ main {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding-top: 4%;
     padding-right: 2%;
     border-right: 1px solid black;
 }

@@ -86,4 +86,30 @@ function calculoOperacao(valor1, operacao, valor2) {
 }
 
 
+document.addEventListener('keydown', cliqueTecla);
 
+function cliqueTecla(event) {
+    let tecla = event.key;
+    if ( tecla == 0 || tecla == 1 || tecla == 2 || tecla == 3 || tecla == 4 || tecla == 5 || tecla == 6 || tecla == 7 || tecla == 8 || tecla == 9) {
+        if (isNaN(visor.innerHTML)) {
+            visor.innerHTML = tecla;
+        }
+        else {
+            visor.innerHTML = visor.innerHTML + tecla;
+        }
+    }
+    
+    else if (tecla == '+') {
+        if (!isNaN(visor.innerHTML)) {
+            if (valorSalvo === undefined) {
+                
+                valorSalvo = Number(visor.innerHTML);
+            }
+            else {
+                valorSalvo = calculoOperacao(valorSalvo, operacaoSalva, Number(visor.innerHTML));
+            }
+        }
+    
+       
+    }
+} 
