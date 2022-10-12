@@ -24,7 +24,7 @@ btnPonto.addEventListener('click', cliquePonto);
 function cliquePonto(event) {
 let valorVisor = Number(visor.innerHTML);
     if (!isNaN(visor.innerHTML+'.')) {
-        visor.innerHTML = visor.innerHTML + event.target.innerHTML;
+        visor.innerHTML = visor.innerHTML + ".";
     }
 }
 
@@ -99,7 +99,7 @@ function cliqueTecla(event) {
         }
     }
     
-    else if (tecla == '+') {
+    else if (tecla === '+' || tecla === '-' || tecla === '*' || tecla === '/') {
         if (!isNaN(visor.innerHTML)) {
             if (valorSalvo === undefined) {
                 
@@ -108,8 +108,16 @@ function cliqueTecla(event) {
             else {
                 valorSalvo = calculoOperacao(valorSalvo, operacaoSalva, Number(visor.innerHTML));
             }
+            operacaoSalva = tecla;
+            visor.innerHTML = tecla;
         }
-    
-       
+    }
+
+    else if (tecla == 'Enter' || tecla === '=') {
+        calcular();
+    }
+
+    else if (tecla == '.' || tecla == ',') {
+        cliquePonto();
     }
 } 
