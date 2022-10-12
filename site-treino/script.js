@@ -12,7 +12,7 @@ function openNote() {
 let title = document.getElementById("title");
 let description = document.getElementById("description");
 let btnAddNote = document.getElementById("btnAddNote");
-let divItens = document.getElementById("dItens");
+let divItens = document.getElementById("secNoteBasic");
 
 btnAddNote.addEventListener("click", getDados);
 
