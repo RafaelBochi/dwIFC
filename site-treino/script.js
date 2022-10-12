@@ -5,15 +5,14 @@ btnOpenNote.addEventListener("click", openNote);
 
 function openNote() {
   
-  divNote.style.opacity ="1";
-  divNote.style.zIndex = "999";
+  divNote.style.display = "flex"
 }
 
 
 let title = document.getElementById("title");
 let description = document.getElementById("description");
 let btnAddNote = document.getElementById("btnAddNote");
-let divItens = document.getElementById("itens");
+let divItens = document.getElementById("dItens");
 
 btnAddNote.addEventListener("click", getDados);
 
@@ -21,8 +20,7 @@ function getDados() {
   let titleText = title.value;
   let descriptionText = description.value;
 
-  divNote.style.opacity = "0";
-  divNote.style.zIndex = "-999"
+  divNote.style.display = "none";
 
   divItens.innerHTML =
     divItens.innerHTML +
