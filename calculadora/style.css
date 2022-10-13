@@ -52,7 +52,14 @@ main {
 }
 
 .visor p {
-    padding-top: 4%;
+    outline: 0;
+    width: 90%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding-left: 3%;
+    font-size: 2.5rem;
+    overflow-x: scroll;
 }
 
 .btn-c{
@@ -101,9 +108,9 @@ main {
     color: white;
     padding-top: 2%;
     clip-path: circle(40% at 50% 50%);
-    transition: ease-in 0.4s;
+    transition: ease-in 0.4s;  
 }
 
 .section-numeros>div:hover {
-    background-color: rgba(0, 0, 0, 0.241);
+    box-shadow: 10px 5px 5px black;
 }
