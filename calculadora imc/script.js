@@ -16,7 +16,7 @@ const calcular = () => {
     if (imc < 15.99) {
 
         imcDiv.style.backgroundColor = "red";
-        imcDiv.innerHTML = `${nome.value} seu IMC é ${imc}. Você está classificado com MAGREZA ESTREMA`
+        imcDiv.innerHTML = `${nome.value} seu IMC é ${imc}. Você está classificado com MAGREZA EXTREMA`
         
     }
     else if (imc >= 16  && imc <= 16.99) {
