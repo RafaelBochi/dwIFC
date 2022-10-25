@@ -8,6 +8,34 @@ btnCalc.addEventListener('click', () => calcular ());
 
 const calcular = () => {
 
+    let imcs = secImcs.childNodes;
+
+    if (nome.value.trim().length < 5) {
+        return nome.classList.add("invalidInput")
+    }
+
+    else {
+        nome.classList.remove("invalidInput");
+    }
+
+    if (altura.value.trim().length < 1) {
+        return altura.classList.add("invalidInput")
+    }
+
+    
+
+    if (peso.value.trim().length < 1) {
+        return peso.classList.add("invalidInput")
+    }
+
+    else {
+        peso.classList.remove("invalidInput");
+    }
+
+    if(imcs.length == 15) {
+        secImcs.firstChild.remove();
+    }
+
     let imc = (peso.value/(altura.value*altura.value)).toFixed(1);
 
     let imcDiv = document.createElement('div');

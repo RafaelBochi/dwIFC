@@ -13,7 +13,7 @@ html {
 
 body {
     
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(240, 240, 240);
     font-family: sans-serif;
     font-size: 1.6rem;
     height: 100%;
@@ -26,15 +26,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100%;
 }
 
+h1 {
+    position: absolute;
+    top: 5%;
+    font-size: 4.0rem;
+}
+
 .sec-calculadora {
-    background-color: rgb(80, 80, 80);
+    position: relative;
+    top: 5%;
     padding: 10%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -48,35 +54,97 @@ input {
     height: 120%;
     position: relative;
     outline: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+label {
+    position: absolute;
+    left: 0%;
+    color: rgb(130, 130, 130);
+    font-size: 1.3rem;
+    transition: all 0.5s;
+}
+
+.nome-input:focus, .nome-input:valid, .altura-input:focus, .altura-input:valid, .peso-input:focus, .peso-input:valid  {
+    border-bottom: 1px solid cornflowerblue;
+}
+
+.nome-input:focus + label, .nome-input:valid + label, .altura-input:focus + label, .altura-input:valid + label, .peso-input:focus + label, .peso-input:valid + label {
+    transform: translateY(-10px);
+    font-size: 1.0rem;
+    color: cornflowerblue;
 }
 
 button {
     cursor: pointer;
-    padding: 1%;
+    height: 35%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .imcs {
-    width: 15%;
+    width: 100%;
     position: absolute;
     left: 0%;
-    top: 0% ;
-    height: 100%;
-    border-right: 2px solid black;
+    top: 25%;
+    height: 75%;
+    border-top: 1px solid black;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2%;
     padding: 2%;
 }
 
 .imc {
-    width: 100%;
-    height: 10%;
+    width: 30%;
     color: black;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1%;
+    font-size: 1.4rem;
+    animation-name: imcs;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+}
+
+@keyframes imcs {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+
+/**/
+
+.invalidInput {
+    border-color: red;
+}
+
+.invalidInput + label {
+    color: red;
+}
+
+.invalidInput:focus, .invalidInput:valid {
+    border-bottom: 1px solid red;
+}
+
+.invalidInput:focus + label, .invalidInput:valid + label {
+    
+    color: red;
 }
 
 
