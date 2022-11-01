@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+main {
+    height: 100%;
+}
+
+.openLinks {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    z-index: 999;
+}
+
+.openLinks > i {
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    background-color: #56042ca3;
+    width: 20%;
+    position: fixed;
+    right: 0%;
+    height: 100%;
+    z-index: 9;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.links > a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.664);
+    transition: all 0.5s;
+}
+
+.links > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.secIntro {
+    position: relative;
+    width: 100%;
+    font-size: 1.7rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    background-color: #56042c;
+    padding: 2%;
+    color: white;
+    z-index: 1;
+}
+
+.secIntro > h2 {
+    color: white;
+    text-align: center;
+    margin: 2%;
+}  
+
+.tableChamp {
+    margin: 5%;
+}
+
+.parallax {
+    height: 100vh !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax1 {
+    background-image: url(imgs/parallax1.jpg);
+}
+
+
+
+/* Ultlites */
+
+.close {
+    display: none;
+}
