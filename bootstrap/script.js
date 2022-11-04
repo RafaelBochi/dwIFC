@@ -2,7 +2,7 @@ let openLinks = document.querySelector('.openLinks');
 let iconOpenLinks = document.querySelector('.openLinks i');
 let secLinks = document.querySelector('.links');
 
-openLinks.addEventListener('click', () => {
+openLinks.addEventListener('mouseover', () => {
 
     secLinks.classList.toggle('close');
 

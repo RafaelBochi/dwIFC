@@ -24,20 +24,26 @@
 
     <main>
 
-      <span class="openLinks">
-        <i class="fa-solid fa-bars fa-2x"></i>
-      </span>
-
-      <section class="container-fluid links close">
-
-        <div class="links">
-          <a href="#">Brasil</a>
-          <a href="#">Jogos</a>
-          <a href="#">Grupos</a>
-          <a href="#">Estadios</a>
+      <header class="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="navbar-nav">
+              <div class="nav-item">
+                <a class="nav-link" href="#">Seleções</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#">Grupos</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#">Jogos</a>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </section>
+      </header>
 
       <section class="parallax parallax1"></section>
 
@@ -52,7 +58,7 @@
           <strong>Ultimos Campeões</strong>
         </h2>
 
-        <table class="tableChamp">
+        <table class="table table-dark table-striped">
           <tr>
             <th>País</th>
             <th>Ano</th>
