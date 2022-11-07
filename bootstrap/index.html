@@ -24,89 +24,249 @@
 
     <main>
 
-      <header class="navbar">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <div class="navbar-nav">
-              <div class="nav-item">
-                <a class="nav-link" href="#">Seleções</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" href="#">Grupos</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" href="#">Jogos</a>
-              </div>
+     
+        <nav class="navbar col-12 navbar-expand-lg navbar-white bg-white position-fixed border-bottom border-dark">
+          <div class="container-fluid col-11">
+            <a class="navbar-brand fs-1" href="#">
+              <img src="imgs/title.png" alt="Titulo Copa do Mundo 2022" width="60%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Selecões</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Grupos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jogos</a>
+                </li>
+                
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             </div>
           </div>
+        </nav>
+
+        <section class="container-fluid secChamp">
+  
+        <p class="text-center text-white col-12 container-fluid fs-1 bg-dark tittleChamp">
+          Ultimos Campeões
+        </p>
+  
+        <div class="table-responsive col-12 container-fluid">
+          <table class="table table-bordered border-dark">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Ano</th>
+                <th scope="col">Seleção</th>
+                <th scope="col">Qntd. Titulos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">2018</th>
+                <td>
+                  <img src="imgs/icons paises/franca.png" alt="Bandeira França">
+                    França</td>
+                <td>
+                  2 
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2014</th>
+                <td>
+                  <img src="imgs/icons paises/alemanha.png" alt="Bandeira Alemanha">
+                  Alemanha</td>
+                <td>
+                  4
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2010</th>
+                <td>
+                  <img src="imgs/icons paises/spain.png" alt="Bandeira Espanha">
+                  Espanha</td>
+                <td>
+                  1
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2006</th>
+                <td>
+                  <img src="imgs/icons paises/italia.png" alt="">
+                  Itália</td>
+                <td>
+                  4
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo"></td>
+              </tr>
+              <tr>
+                <th scope="row">2002</th>
+                <td>
+                  <img src="imgs/icons paises/brasil.png" alt="Bandeira Brasil">
+                  Brasil</td>
+                <td>
+                  5
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1998</th>
+                <td>
+                  <img src="imgs/icons paises/franca.png" alt="">
+                  França</td>
+                <td>
+                  1
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo"></td>
+              </tr>
+              <tr>
+                <th scope="row">1994</th>
+                <td>
+                  <img src="imgs/icons paises/brasil.png" alt="Bandeira Brasil">
+                  Brasil</td>
+                <td>
+                  4
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo"></td>
+              </tr>
+              <tr>
+                <th scope="row">1990</th>
+                <td>
+                  <img src="imgs/icons paises/alemanha.png" alt="Bandeira Alemanha">
+                  Alemanha</td>
+                <td>
+                  3
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo"></td>
+              </tr>
+              <tr>
+                <th scope="row">1986</th>
+                <td>
+                  <img src="imgs/icons paises/argentina.png" alt="Bandeira Argentina">
+                  Argentina</td>
+                <td>
+                  2
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo"></td>
+              </tr>
+              <tr>
+                <th scope="row">1982</th>
+                <td>
+                  <img src="imgs/icons paises/italia.png" alt="Bandeira Itália">
+                  Itália</td>
+                <td>
+                  3
+                  <img src="imgs/copa-do-mundo.png" alt="Troféu Copa do Mundo"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </header>
-
-      <section class="parallax parallax1"></section>
-
-      <section class="container-fluid secIntro">
-        <h2>
-          <strong>Copa do Mundo 2022 Catar</strong>
-        </h2>
-
-        <p>Copa do Mundo FIFA de 2022 ou Campeonato Mundial de Futebol FIFA de 2022 será a vigésima segunda edição deste evento esportivo, um torneio internacional de futebol masculino organizado pela Federação Internacional de Futebol, que ocorrerá no Catar</p>
-
-        <h2>
-          <strong>Ultimos Campeões</strong>
-        </h2>
-
-        <table class="table table-dark table-striped">
-          <tr>
-            <th>País</th>
-            <th>Ano</th>
-          </tr>
-          <tr>
-            <td>França</td>
-            <td>2018</td>
-          </tr>
-          <tr>
-            <td>Alemanha</td>
-            <td>2014</td>
-          </tr>
-          <tr>
-            <td>Espanha</td>
-            <td>2010</td>
-          </tr>
-          <tr>
-            <td>Italia</td>
-            <td>2006</td>
-          </tr>
-          <tr>
-            <td>Brasil</td>
-            <td>2002</td>
-          </tr>
-          <tr>
-            <td>França</td>
-            <td>1998</td>
-          </tr>
-          <tr>
-            <td>Brasil</td>
-            <td>1994</td>
-          </tr>
-          <tr>
-            <td>Alemanha</td>
-            <td>1990</td>
-          </tr>
-          <tr>
-            <td>Argentina</td>
-            <td>1986</td>
-          </tr>
-        </table>
-
-      </section>
-
-      <section class="parallax"></section>
-
-
-
+  
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="imgs/seleções/frança 2018.jpg" class="d-block w-100" alt="Seleção Francesa 2018">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Francesa 2018</h5>
+              </div>
+            </div>
+            
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/alemanha 2014.jpg" class="d-block w-100" alt="Seleção Alemã 2014">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Alemã 2014</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/espanha 2010.jpg" class="d-block w-100" alt="Seleção Espanha 2010">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Espanhola 2010</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/italia 2006.jpg" class="d-block w-100" alt="Seleção Italiana 2006">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Italiana 2006</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/brasil 2002.webp" class="d-block w-100" alt="Seleção Brasileira 2002">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Brasileira 2002</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/frança 1998.webp" class="d-block w-100" alt="Seleção Francesa 1998">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Francesa 1998</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/brasil 1994.jpg" class="d-block w-100" alt="Seleção Brasileira 1994">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Brasileira 1994</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/alemanha 1990.webp" class="d-block w-100" alt="Seleção Alemã 1990">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Alemã 1990</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/argentina 1986.jpg" class="d-block w-100" alt="Seleção Argentina 1986">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Argentina 1986</h5>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imgs/seleções/italia 1982.jpg" class="d-block w-100" alt="Seleção Italiana 1982">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Seleção Italiana 1982</h5>
+              </div>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <span class="placeholder bg-dark col-10 time position-relative top-2 start-50 translate-middle"></span>
+     </section>
 
     </main>
 
