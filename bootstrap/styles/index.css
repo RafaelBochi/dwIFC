@@ -22,7 +22,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 3%;
-    padding-top: 8%;
+    padding-top: 3%;
 }
 
 .navbar {
@@ -52,7 +52,6 @@ main {
 .secChamp {
     padding: 2%;
     width: 80%;
-    background-color: rgb(230, 230, 230);
     border-radius: 20px;
 }
 
